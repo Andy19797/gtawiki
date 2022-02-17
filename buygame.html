@@ -4,33 +4,37 @@
         <title>Cumpara jocul</title>
         <link rel="icon" type="image/x-icon" href="images/gtav.png">
         <style>
-            .header {
-                padding: 60px;
-                background: rgb(221, 221, 221);
-                color: white;
-                font-size: 20px;
+            .flex {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 15px;
+                background: rgb(240, 240, 240);
+                font-size: 25px;
                 text-decoration: none;
             }
 
             a:link, a:visited {
-              color: rgb(51,102,187);
+                color: rgb(51,102,187);
               text-align: center;
               text-decoration: none;
               display: inline-block;
             }
             
-            .hover {
+            a:hover, a:active {
               color: rgb(11,0,128);
               text-decoration: underline;
             }
         </style>
     </head>
     <body style="margin-left: 100px; margin-right: 100px; font-family: Arial, Helvetica, sans-serif;">
-        <div class="header" style="margin-left: -100px; margin-right: -100px;">
-            <img src="images/gtav.png" style="margin-left: 100px;" height="150px" width="150px">
-            <a href="index.html" style="margin-right: 25px; margin-left: 50px; color: black;">Acasa</a>
-            <a href="buygame.html" style="color: black;">Cumpara</a>
-        </div>
+        <article class="flex" style="margin-left: -100px; margin-right: -100px; margin-top: -8px;">
+            <div class="flex">
+                <img class="none" src="images/gtav.png" style="margin-left: -700px; margin-right: 550px;" height="100px" width="100px">
+                <a href="index.html" style="margin-right: 50px; margin-left: 50px; color: black; text-decoration: none; text-align: center;">Acasa</a>
+                <a href="buygame.html" style="color: black; text-decoration: none; text-decoration: none; text-align: center;">Cumpara</a>
+            </div>
+        </article>
         <center><h1 style="font-size: 42.5px;">Metode de a cumpara jocul</h1></center>
         <img src="images/buygame/eneba.png">
     </body>
