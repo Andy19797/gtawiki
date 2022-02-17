@@ -3,39 +3,122 @@
     <head>
         <title>Cumpara jocul</title>
         <link rel="icon" type="image/x-icon" href="images/gtav.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
             .flex {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding: 15px;
-                background: rgb(240, 240, 240);
-                font-size: 25px;
-                text-decoration: none;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              padding: 15px;
+              background: rgb(240, 240, 240);
+              font-size: 25px;
+              text-decoration: none;
             }
 
             a:link, a:visited {
-                color: rgb(51,102,187);
+              color: black;
               text-align: center;
               text-decoration: none;
               display: inline-block;
             }
             
             a:hover, a:active {
-              color: rgb(11,0,128);
               text-decoration: underline;
+            }
+
+            .flex-container2 {
+                position: relative;
+                width: 250px;
+                height: 250px;
+            }
+
+            .inner-element {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                width: 200px;
+                height: 200px;
+            }
+
+            .inner-element2 {
+                position: absolute;
+                left: 50%;
+                top: 105%;
+                transform: translate(-50%,-50%);
+                width: 100px;
+                height: 100px;
+                text-align: center;
+                font-size: 25px;
+            }
+
+            .inner-element3 {
+                position: absolute;
+                left: 50%;
+                top: 88%;
+                transform: translate(-50%,-50%);
+                width: 260px;
+                height: 42.5px;
+                text-align: center;
+                font-size: 17.5px;
+                margin-top: 75px;
+                background-color: #FFDF00;
+            }
+
+            .flex-container {
+                display: flex;
+            }
+
+            .flex-child {
+                flex: 1;
+            }
+
+            .flex-child:first-child {
+                margin-right: 20px;
+            }
+
+            .eneba {
+                color: rgb(71,29,173);
+            }
+
+            .g2a {
+                color: orange;
+            }
+
+            .steam {
+                color:rgb(28, 30, 143)
             }
         </style>
     </head>
     <body style="margin-left: 100px; margin-right: 100px; font-family: Arial, Helvetica, sans-serif;">
         <article class="flex" style="margin-left: -100px; margin-right: -100px; margin-top: -8px;">
             <div class="flex">
-                <img class="none" src="images/gtav.png" style="margin-left: -700px; margin-right: 550px;" height="100px" width="100px">
+                <img src="images/gtav.png" style="margin-left: -700px; margin-right: 550px;" height="100px" width="100px">
                 <a href="index.html" style="margin-right: 50px; margin-left: 50px; color: black; text-decoration: none; text-align: center;">Acasa</a>
                 <a href="buygame.html" style="color: black; text-decoration: none; text-decoration: none; text-align: center;">Cumpara</a>
             </div>
         </article>
         <center><h1 style="font-size: 42.5px;">Metode de a cumpara jocul</h1></center>
-        <img src="images/buygame/eneba.png">
+        <div class="flex-container" style="margin-top: 100px;">
+            <div class="flex-container2 flex-child">
+                <a href="https://bit.ly/3HUdCGO" target="_blank">
+                    <img src="images/buygame/eneba.png" alt="Eneba" class="inner-element">
+                    <h3 class="inner-element2 eneba">Eneba</h3>
+                </a>
+                <p class="inner-element3" style="color: black;">Cea mai buna metoda deoarece este cea mai ieftina optiune!</p>
+            </div>
+            <div class="flex-container2 flex-child">
+                <a href="https://bit.ly/34N72DK" target="_blank">
+                    <img src="images/buygame/g2a.png" alt="G2A" class="inner-element">
+                    <h3 class="inner-element2 g2a">G2A</h3>
+                </a>
+            </div>
+            <div class="flex-container2 flex-child">
+                <a href="https://bit.ly/3oYi4wN" target="_blank">
+                    <img src="images/buygame/steam.png" alt="Steam" class="inner-element">
+                    <h3 class="inner-element2 steam">Steam</h3>
+                </a>
+            </div>
+        </div>
     </body>
 </html>
